@@ -22,6 +22,9 @@ public class RegisterPage {
     @FindBy(xpath = "//a[text()='REGISTER']")
     WebElement clickRegistration;
 
+    @FindBy(xpath = "//b[starts-with(text(),' Note: Your user name is')]")
+    public WebElement registrationSucess;
+
     WebDriver driver;
 
     public RegisterPage(WebDriver driver)
@@ -49,6 +52,11 @@ public class RegisterPage {
     public void clickRegistration()
     {
         clickRegistration.click();
+    }
+
+    public String readSuccessMessage()
+    {
+        return registrationSucess.getText();
     }
 
 }

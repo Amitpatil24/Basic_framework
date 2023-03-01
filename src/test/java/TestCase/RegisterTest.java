@@ -11,11 +11,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class RegisterTest extends Base_class {
-
-    RegisterPage registerPage;
-    RegisterHelpers registerHelpers;
 
     @BeforeClass
     public void initialize() {
@@ -26,9 +24,7 @@ public class RegisterTest extends Base_class {
     @BeforeMethod()
     public void goToRegistration()
     {
-        driver.get("https://demo.guru99.com/test/newtours/index.php");
         registerPage.clickRegistration();
-
     }
 
     @DataProvider(name = "UserData")
@@ -42,6 +38,9 @@ public class RegisterTest extends Base_class {
     @Test(dataProvider = "UserData")
     public void Registration(String username, String password,String confirmPwd) {
         registerHelpers.doRegister(username, password,confirmPwd);
+
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(registerPage.registrationSucess.getText(),"Note: Your user name is");
 
     }
 

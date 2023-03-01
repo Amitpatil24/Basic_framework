@@ -17,5 +17,6 @@ public class RegisterHelpers {
         registerPage.setPassword(password);
         registerPage.setConfirmPassword(confirmPwd);
         registerPage.clickSubmit();
+
     }
 }

@@ -16,6 +16,9 @@ public class LoginPage {
     @FindBy(name = "submit")
     WebElement submit;
 
+    @FindBy(xpath = "//h3[text()='Login Successfully']")
+    public WebElement loginSuccess;
+
     WebDriver driver;
 
     public LoginPage(WebDriver driver){
@@ -34,5 +37,11 @@ public class LoginPage {
     public void clickSubmit(){
         submit.click();
     }
+
+    public boolean loginSuccess()
+    {
+        return loginSuccess.isDisplayed();
+    }
+
 
 }
