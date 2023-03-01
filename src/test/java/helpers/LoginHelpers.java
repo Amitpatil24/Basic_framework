@@ -1,6 +1,6 @@
-package Helpers;
+package helpers;
 
-import PajeObject.LoginPage;
+import pajeObjects.LoginPage;
 import org.openqa.selenium.WebDriver;
 
 public class LoginHelpers {

@@ -1,4 +1,4 @@
-package PajeObject;
+package pajeObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,6 +19,9 @@ public class LoginPage {
     @FindBy(xpath = "//h3[text()='Login Successfully']")
     public WebElement loginSuccess;
 
+    @FindBy(xpath = "//input[@type='password']/following-sibling::span")
+    public WebElement loginFail;
+
     WebDriver driver;
 
     public LoginPage(WebDriver driver){
@@ -38,9 +41,14 @@ public class LoginPage {
         submit.click();
     }
 
-    public boolean loginSuccess()
+    public String loginSuccess()
     {
-        return loginSuccess.isDisplayed();
+        return loginSuccess.getText();
+    }
+
+    public String loginFail()
+    {
+        return loginFail.getText();
     }
 
 

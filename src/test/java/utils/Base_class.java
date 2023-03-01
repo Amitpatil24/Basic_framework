@@ -1,14 +1,13 @@
-package Utils;
+package utils;
 
-import Helpers.LoginHelpers;
-import Helpers.RegisterHelpers;
-import PajeObject.LoginPage;
-import PajeObject.RegisterPage;
+import helpers.LoginHelpers;
+import helpers.RegisterHelpers;
+import pajeObjects.LoginPage;
+import pajeObjects.RegisterPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
 
@@ -29,7 +28,7 @@ public class Base_class {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    @BeforeMethod()
+    @BeforeClass(dependsOnMethods = "invokeBrowser")
     public void navigateUrl()
     {
         driver.get("https://demo.guru99.com/test/newtours/index.php");

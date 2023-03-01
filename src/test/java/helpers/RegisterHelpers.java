@@ -1,7 +1,6 @@
-package Helpers;
+package helpers;
 
-import PajeObject.LoginPage;
-import PajeObject.RegisterPage;
+import pajeObjects.RegisterPage;
 import org.openqa.selenium.WebDriver;
 
 public class RegisterHelpers {

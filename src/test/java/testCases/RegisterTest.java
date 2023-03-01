@@ -1,12 +1,8 @@
-package TestCase;
+package testCases;
 
-import Helpers.LoginHelpers;
-import Helpers.RegisterHelpers;
-import PajeObject.LoginPage;
-import PajeObject.RegisterPage;
-import Utils.Base_class;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
+import helpers.RegisterHelpers;
+import pajeObjects.RegisterPage;
+import utils.Base_class;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -24,11 +20,12 @@ public class RegisterTest extends Base_class {
     @BeforeMethod()
     public void goToRegistration()
     {
+        driver.get("https://demo.guru99.com/test/newtours/index.php");
         registerPage.clickRegistration();
     }
 
     @DataProvider(name = "UserData")
-    public Object[][] ld() {
+    public Object[][] registrationsData() {
         return new Object[][]{
                 {"Adhira05", "Adhira","Adhira"},
                 {"Amit24", "Amit","Amit"},
@@ -40,7 +37,9 @@ public class RegisterTest extends Base_class {
         registerHelpers.doRegister(username, password,confirmPwd);
 
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(registerPage.registrationSucess.getText(),"Note: Your user name is");
+        softAssert.assertTrue(registerPage.registrationSucess.isDisplayed(),"Registration Success message is not Displayed ");
+
+        softAssert.assertAll();
 
     }
 
