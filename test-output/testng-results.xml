@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automation Suite" duration-ms="74030" started-at="2023-03-01T15:07:43 IST" finished-at="2023-03-01T15:08:57 IST">
+    <groups>
+    </groups>
+    <test name="PracticeTest" duration-ms="74030" started-at="2023-03-01T15:07:43 IST" finished-at="2023-03-01T15:08:57 IST">
+      <class name="TestCase.RegisterTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="invokeBrowser" is-config="true" duration-ms="17886" started-at="2023-03-01T15:07:43 IST" finished-at="2023-03-01T15:08:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="initialize" is-config="true" duration-ms="235" started-at="2023-03-01T15:08:01 IST" finished-at="2023-03-01T15:08:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="navigateUrl()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="navigateUrl" is-config="true" duration-ms="12164" started-at="2023-03-01T15:08:01 IST" finished-at="2023-03-01T15:08:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method status="PASS" signature="goToRegistration()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="goToRegistration" is-config="true" duration-ms="12047" started-at="2023-03-01T15:08:13 IST" finished-at="2023-03-01T15:08:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToRegistration -->
+        <test-method status="PASS" signature="Registration(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCase.RegisterTest@60438a68]" name="Registration" duration-ms="4978" started-at="2023-03-01T15:08:25 IST" data-provider="UserData" finished-at="2023-03-01T15:08:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adhira05]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Adhira]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Adhira]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration -->
+        <test-method status="PASS" signature="navigateUrl()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="navigateUrl" is-config="true" duration-ms="1439" started-at="2023-03-01T15:08:30 IST" finished-at="2023-03-01T15:08:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method status="PASS" signature="goToRegistration()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="goToRegistration" is-config="true" duration-ms="17276" started-at="2023-03-01T15:08:32 IST" finished-at="2023-03-01T15:08:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToRegistration -->
+        <test-method status="PASS" signature="Registration(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCase.RegisterTest@60438a68]" name="Registration" duration-ms="5176" started-at="2023-03-01T15:08:49 IST" data-provider="UserData" finished-at="2023-03-01T15:08:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amit24]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Amit]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Amit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="closeBrowser" is-config="true" duration-ms="2486" started-at="2023-03-01T15:08:54 IST" finished-at="2023-03-01T15:08:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestCase.RegisterTest -->
+    </test> <!-- PracticeTest -->
+  </suite> <!-- Automation Suite -->
+</testng-results>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Suite]">
+  <test thread-count="5" name="PracticeTest(failed)">
+    <classes>
+      <class name="TestCase.LoginTest">
+        <methods>
+          <include name="invokeBrowser"/>
+          <include name="verifyLogin" invocation-numbers="0 1 2"/>
+          <include name="navigateUrl"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- TestCase.LoginTest -->
+    </classes>
+  </test> <!-- PracticeTest(failed) -->
+</suite> <!-- Failed suite [Automation Suite] -->
