@@ -20,7 +20,7 @@ public class RegisterTest extends Base_class {
     @BeforeMethod()
     public void goToRegistration()
     {
-        driver.get("https://demo.guru99.com/test/newtours/index.php");
+       // driver.get("https://demo.guru99.com/test/newtours/index.php");
         registerPage.clickRegistration();
     }
 
@@ -37,9 +37,10 @@ public class RegisterTest extends Base_class {
         registerHelpers.doRegister(username, password,confirmPwd);
 
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(registerPage.registrationSucess.isDisplayed(),"Registration Success message is not Displayed ");
+        softAssert.assertTrue(registerPage.readMessage.isDisplayed(),"Registration Success message is not Displayed ");
 
         softAssert.assertAll();
+        System.out.println("Registered Successfully");
 
     }
 

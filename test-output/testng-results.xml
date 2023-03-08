@@ -1,29 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Automation Suite" duration-ms="74030" started-at="2023-03-01T15:07:43 IST" finished-at="2023-03-01T15:08:57 IST">
+  <suite name="Automation Suite" duration-ms="69968" started-at="2023-03-08T23:42:15 IST" finished-at="2023-03-08T23:43:25 IST">
     <groups>
     </groups>
-    <test name="PracticeTest" duration-ms="74030" started-at="2023-03-01T15:07:43 IST" finished-at="2023-03-01T15:08:57 IST">
-      <class name="TestCase.RegisterTest">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="invokeBrowser" is-config="true" duration-ms="17886" started-at="2023-03-01T15:07:43 IST" finished-at="2023-03-01T15:08:01 IST">
+    <test name="PracticeTest" duration-ms="69968" started-at="2023-03-08T23:42:15 IST" finished-at="2023-03-08T23:43:25 IST">
+      <class name="testCases.FlightTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCases.FlightTest@2bea5ab4]" name="invokeBrowser" is-config="true" duration-ms="2184" started-at="2023-03-08T23:43:08 IST" finished-at="2023-03-08T23:43:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="initialize" is-config="true" duration-ms="235" started-at="2023-03-01T15:08:01 IST" finished-at="2023-03-01T15:08:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="navigateUrl()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="navigateUrl" is-config="true" duration-ms="12164" started-at="2023-03-01T15:08:01 IST" finished-at="2023-03-01T15:08:13 IST">
+        <test-method status="PASS" signature="navigateUrl()[pri:0, instance:testCases.FlightTest@2bea5ab4]" name="navigateUrl" is-config="true" duration-ms="5888" started-at="2023-03-08T23:43:10 IST" depends-on-methods="utils.Base_class.invokeBrowser" finished-at="2023-03-08T23:43:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateUrl -->
-        <test-method status="PASS" signature="goToRegistration()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="goToRegistration" is-config="true" duration-ms="12047" started-at="2023-03-01T15:08:13 IST" finished-at="2023-03-01T15:08:25 IST">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.FlightTest@2bea5ab4]" name="initialize" is-config="true" duration-ms="9" started-at="2023-03-08T23:43:16 IST" finished-at="2023-03-08T23:43:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="Registration()[pri:0, instance:testCases.FlightTest@2bea5ab4]" name="Registration" duration-ms="8076" started-at="2023-03-08T23:43:16 IST" finished-at="2023-03-08T23:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testCases.FlightTest@2bea5ab4]" name="closeBrowser" is-config="true" duration-ms="906" started-at="2023-03-08T23:43:24 IST" finished-at="2023-03-08T23:43:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testCases.FlightTest -->
+      <class name="testCases.LoginTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCases.LoginTest@60438a68]" name="invokeBrowser" is-config="true" duration-ms="4309" started-at="2023-03-08T23:42:15 IST" finished-at="2023-03-08T23:42:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="navigateUrl()[pri:0, instance:testCases.LoginTest@60438a68]" name="navigateUrl" is-config="true" duration-ms="4713" started-at="2023-03-08T23:42:19 IST" depends-on-methods="utils.Base_class.invokeBrowser" finished-at="2023-03-08T23:42:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginTest@60438a68]" name="initialize" is-config="true" duration-ms="116" started-at="2023-03-08T23:42:24 IST" finished-at="2023-03-08T23:42:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="gotoLoginPage()[pri:0, instance:testCases.LoginTest@60438a68]" name="gotoLoginPage" is-config="true" duration-ms="2275" started-at="2023-03-08T23:42:24 IST" finished-at="2023-03-08T23:42:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoLoginPage -->
+        <test-method status="PASS" signature="verifyLoginWithInValidDetails(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@60438a68]" name="verifyLoginWithInValidDetails" duration-ms="4025" started-at="2023-03-08T23:42:27 IST" data-provider="InvalidUserData" finished-at="2023-03-08T23:42:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prashwe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[prashwee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInValidDetails -->
+        <test-method status="PASS" signature="gotoLoginPage()[pri:0, instance:testCases.LoginTest@60438a68]" name="gotoLoginPage" is-config="true" duration-ms="1720" started-at="2023-03-08T23:42:31 IST" finished-at="2023-03-08T23:42:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoLoginPage -->
+        <test-method status="PASS" signature="verifyLoginwithValidDeatils(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@60438a68]" name="verifyLoginwithValidDeatils" duration-ms="4392" started-at="2023-03-08T23:42:32 IST" data-provider="UserData" finished-at="2023-03-08T23:42:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prash]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[prash]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithValidDeatils -->
+        <test-method status="PASS" signature="gotoLoginPage()[pri:0, instance:testCases.LoginTest@60438a68]" name="gotoLoginPage" is-config="true" duration-ms="1793" started-at="2023-03-08T23:42:37 IST" finished-at="2023-03-08T23:42:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoLoginPage -->
+        <test-method status="PASS" signature="verifyLoginwithValidDeatils(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@60438a68]" name="verifyLoginwithValidDeatils" duration-ms="3306" started-at="2023-03-08T23:42:39 IST" data-provider="UserData" finished-at="2023-03-08T23:42:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithValidDeatils -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testCases.LoginTest@60438a68]" name="closeBrowser" is-config="true" duration-ms="940" started-at="2023-03-08T23:42:42 IST" finished-at="2023-03-08T23:42:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testCases.LoginTest -->
+      <class name="testCases.RegisterTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testCases.RegisterTest@de3a06f]" name="invokeBrowser" is-config="true" duration-ms="2497" started-at="2023-03-08T23:42:43 IST" finished-at="2023-03-08T23:42:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="navigateUrl()[pri:0, instance:testCases.RegisterTest@de3a06f]" name="navigateUrl" is-config="true" duration-ms="5162" started-at="2023-03-08T23:42:45 IST" depends-on-methods="utils.Base_class.invokeBrowser" finished-at="2023-03-08T23:42:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.RegisterTest@de3a06f]" name="initialize" is-config="true" duration-ms="25" started-at="2023-03-08T23:42:50 IST" finished-at="2023-03-08T23:42:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="goToRegistration()[pri:0, instance:testCases.RegisterTest@de3a06f]" name="goToRegistration" is-config="true" duration-ms="4427" started-at="2023-03-08T23:42:50 IST" finished-at="2023-03-08T23:42:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToRegistration -->
-        <test-method status="PASS" signature="Registration(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCase.RegisterTest@60438a68]" name="Registration" duration-ms="4978" started-at="2023-03-01T15:08:25 IST" data-provider="UserData" finished-at="2023-03-01T15:08:30 IST">
+        <test-method status="PASS" signature="Registration(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.RegisterTest@de3a06f]" name="Registration" duration-ms="4305" started-at="2023-03-08T23:42:55 IST" data-provider="UserData" finished-at="2023-03-08T23:42:59 IST">
           <params>
             <param index="0">
               <value>
@@ -44,15 +144,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Registration -->
-        <test-method status="PASS" signature="navigateUrl()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="navigateUrl" is-config="true" duration-ms="1439" started-at="2023-03-01T15:08:30 IST" finished-at="2023-03-01T15:08:32 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateUrl -->
-        <test-method status="PASS" signature="goToRegistration()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="goToRegistration" is-config="true" duration-ms="17276" started-at="2023-03-01T15:08:32 IST" finished-at="2023-03-01T15:08:49 IST">
+        <test-method status="PASS" signature="goToRegistration()[pri:0, instance:testCases.RegisterTest@de3a06f]" name="goToRegistration" is-config="true" duration-ms="3448" started-at="2023-03-08T23:42:59 IST" finished-at="2023-03-08T23:43:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToRegistration -->
-        <test-method status="PASS" signature="Registration(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCase.RegisterTest@60438a68]" name="Registration" duration-ms="5176" started-at="2023-03-01T15:08:49 IST" data-provider="UserData" finished-at="2023-03-01T15:08:54 IST">
+        <test-method status="PASS" signature="Registration(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.RegisterTest@de3a06f]" name="Registration" duration-ms="4105" started-at="2023-03-08T23:43:03 IST" data-provider="UserData" finished-at="2023-03-08T23:43:07 IST">
           <params>
             <param index="0">
               <value>
@@ -73,11 +169,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Registration -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestCase.RegisterTest@60438a68]" name="closeBrowser" is-config="true" duration-ms="2486" started-at="2023-03-01T15:08:54 IST" finished-at="2023-03-01T15:08:57 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testCases.RegisterTest@de3a06f]" name="closeBrowser" is-config="true" duration-ms="992" started-at="2023-03-08T23:43:07 IST" finished-at="2023-03-08T23:43:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- TestCase.RegisterTest -->
+      </class> <!-- testCases.RegisterTest -->
     </test> <!-- PracticeTest -->
   </suite> <!-- Automation Suite -->
 </testng-results>

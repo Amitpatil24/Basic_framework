@@ -1,7 +1,9 @@
 package utils;
 
+import helpers.FlightHelpers;
 import helpers.LoginHelpers;
 import helpers.RegisterHelpers;
+import pajeObjects.Flight;
 import pajeObjects.LoginPage;
 import pajeObjects.RegisterPage;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +20,8 @@ public class Base_class {
     public RegisterPage registerPage;
     public LoginHelpers loginHelpers;
     public RegisterHelpers registerHelpers;
+    public Flight flight;
+    public FlightHelpers flightHelpers;
 
     @BeforeClass()
     public void invokeBrowser()

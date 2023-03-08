@@ -20,9 +20,8 @@ public class FlightHelpers {
         flight.setArrivingTo();
         flight.setArrivingMonth();
         flight.setArrivingDay();
-        flight.setArrivingDay();
         flight.setServiceType();
         flight.setAirline();
-        flight.ClickContinue();
+        flight.clickContinue();
     }
 }

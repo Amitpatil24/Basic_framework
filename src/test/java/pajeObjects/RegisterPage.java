@@ -17,14 +17,14 @@ public class RegisterPage {
     @FindBy(name = "confirmPassword")
     WebElement confirmPassword;
 
-    @FindBy(name = "submit")
-    WebElement submit;
+    @FindBy(css = "input[name='submit']")
+    public WebElement buttonSubmit;
 
     @FindBy(xpath = "//a[text()='REGISTER']")
     WebElement clickRegistration;
 
     @FindBy(xpath = "//b[starts-with(text(),' Note: Your user name is')]")
-    public WebElement registrationSucess;
+    public WebElement readMessage;
 
     WebDriver driver;
     GenericHelpers genericHelpers;
@@ -38,33 +38,42 @@ public class RegisterPage {
 
     public void setUsername(String uname) {
         System.out.println("Setting Username as : "+uname);
-        username.sendKeys(uname);
+//        username.sendKeys(uname);
         genericHelpers.setText(username,uname);
     }
 
 
     public void setPassword(String pwd){
         System.out.println("Setting Password as : "+pwd);
-        password.sendKeys(pwd);
+//        password.sendKeys(pwd);
         genericHelpers.setText(password,pwd);
     }
 
     public void setConfirmPassword(String confirmpwd){
-        confirmPassword.sendKeys(confirmpwd);
+        System.out.println("Setting Comfirm Password as : "+confirmpwd);
+//        confirmPassword.sendKeys(confirmpwd);
+        genericHelpers.setText(confirmPassword,confirmpwd);
+
     }
 
     public void clickSubmit(){
-        submit.click();
+        System.out.println("Clicking submit Button");
+//        buttonSubmit.click();
+        genericHelpers.clickElement(buttonSubmit);
     }
 
     public void clickRegistration()
     {
-        clickRegistration.click();
+        System.out.println("Clicking Registration link");
+//        clickRegistration.click();
+        genericHelpers.clickElement(clickRegistration);
     }
 
-    public String readSuccessMessage()
+    public String readNote()
     {
-        return registrationSucess.getText();
+        System.out.println("Reading Note message");
+        return genericHelpers.getString(readMessage);
     }
 
 }
+
