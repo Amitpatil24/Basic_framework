@@ -4,8 +4,9 @@
     <test name="PracticeTest">
 
         <classes>
-            <class name="testCases.LoginTest"/>
+<!--            <class name="testCases.LoginTest"/>-->
 <!--            <class name="testCases.RegisterTest"/>-->
+            <class name="testCases.FlightTest"/>
         </classes>
     </test>
 </suite>
